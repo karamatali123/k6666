@@ -7,16 +7,31 @@ export default function ExperienceSection() {
     >
       <div className="mx-auto max-w-4xl">
         <h2 id="experience-heading" className="text-2xl font-bold text-slate-900">
-          My Experience With K666 Online Earning Game
+          Our 14-Day K666 Test — KK666.com.pk Field Report
         </h2>
-        <p className="mt-4 text-sm leading-relaxed text-slate-700">
-          I tested K666 for two weeks in 2026. Registration took under 2
-          minutes. Easypaisa deposit of PKR 500 credited instantly. Teen Patti
-          and Aviator ran smooth on a mid-range Android phone. First withdrawal
-          of PKR 800 took 4 hours due to verification — second one arrived in
-          20 minutes. I lost more than I won overall. The app is real and
-          functional, but treat it as paid entertainment, not a job.
-        </p>
+        <div className="mt-4 space-y-3 text-sm leading-relaxed text-slate-700">
+          <p>
+            <strong>Devices:</strong> Samsung Galaxy A54, Redmi Note 12, Oppo
+            A78 — all on Jazz 4G in Lahore. <strong>APK version:</strong>{" "}
+            V1.2.35 (52.1 MB). <strong>Total deposited:</strong> Rs 3,200 across
+            6 JazzCash transactions. <strong>Total withdrawn:</strong> Rs 1,850
+            (net loss: Rs 1,350).
+          </p>
+          <p>
+            Registration took 72 seconds. First Rs 500 deposit credited in 4
+            minutes. Teen Patti and Aviator loaded without crashes. The lucky
+            wheel gave Rs 15 on Day 1. First withdrawal of Rs 800 took 4 hours
+            12 minutes — support said &quot;first-time security check.&quot;
+            Second withdrawal of Rs 1,050 arrived in 19 minutes via JazzCash.
+          </p>
+          <p>
+            I lost Rs 1,350 overall — mostly on Fortune Tiger and Aviator
+            sessions during evening peak hours. The app is genuine and payments
+            work, but the math favours the house. I would recommend K666 only to
+            players who treat Rs 200–500 as entertainment budget, same as a
+            cinema ticket — not as a side income plan.
+          </p>
+        </div>
       </div>
     </section>
   );

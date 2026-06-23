@@ -40,7 +40,7 @@ export default function SchemaMarkup() {
   const organization = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "K666 Game Guide",
+    name: "KK666.com.pk — K666 Game Guide",
     url: SITE_URL,
     logo: `${SITE_URL}/k666images/k6661.jpeg`,
     sameAs: [
@@ -72,7 +72,7 @@ export default function SchemaMarkup() {
   const website = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "K666 Game Pakistan Guide",
+    name: "KK666.com.pk — K666 Game Pakistan Guide",
     url: SITE_URL,
     potentialAction: {
       "@type": "SearchAction",

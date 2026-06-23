@@ -20,11 +20,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "K666 Game Pakistan Guide",
+    default: "KK666.com.pk — K666 Game Pakistan Guide",
     template: "%s",
   },
   description:
-    "Complete K666 Game guide for Pakistan players. APK download, Easypaisa & JazzCash payments, bonuses, and reviews.",
+    "Independent K666 Game guide for Pakistan. APK download, JazzCash & Easypaisa withdrawal steps, bonuses, referral code & honest 2026 review.",
   robots: {
     index: true,
     follow: true,
@@ -69,7 +69,7 @@ export default function RootLayout({
                 className="h-9 w-9 rounded-lg"
                 priority
               />
-              <span>K666 Game Guide</span>
+              <span>KK666 Game Guide</span>
             </a>
             <div className="flex gap-4 text-sm font-medium">
               <a
@@ -100,8 +100,8 @@ export default function RootLayout({
         </main>
         <footer className="border-t border-slate-200 bg-slate-50 px-4 py-8 text-center text-sm text-slate-500 sm:px-6">
           <p>
-            &copy; {new Date().getFullYear()} K666 Game Pakistan Guide. For
-            informational purposes only.
+            &copy; {new Date().getFullYear()} KK666.com.pk — K666 Game Pakistan
+            Guide. For informational purposes only.
           </p>
         </footer>
       </body>

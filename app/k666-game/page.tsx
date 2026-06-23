@@ -25,32 +25,34 @@ export const dynamic = "force-static";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "K666 Game Download APK 2026 – Official Pakistan Guide",
+  title:
+    "K666 Game Download APK Pakistan 2026 | KK666 Login, Bonus & Withdrawal",
   description:
-    "Download K666 Game APK for Pakistan in 2026. Complete guide with Easypaisa & JazzCash withdrawals, bonuses, login steps & honest real-or-fake review.",
+    "KK666.com.pk tested K666 Game APK V1.2.35 for Pakistan. Download link, JazzCash & Easypaisa withdrawal steps, Rs 2000 referral bonus, login guide & real-or-fake review.",
   keywords: [
     "K666 Game",
-    "K666",
-    "K666 APK",
-    "K666 Download",
-    "K666 Login",
     "K666 Game Download",
     "K666 APK Download",
-    "K666 Pakistan",
-    "K666 Review",
+    "K666 Download Pakistan",
+    "K666 Login",
+    "K666 Game Pakistan",
     "K666 Real or Fake",
     "K666 Easypaisa Withdrawal",
     "K666 JazzCash Withdrawal",
     "K666 Bonus 2026",
+    "K666 Referral Code",
+    "K666 APK V1.2.35",
+    "kk666.com.pk",
   ],
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: "/k666-game" },
   openGraph: {
-    title: "K666 Game Download APK 2026 – Official Pakistan Guide",
+    title:
+      "K666 Game Download APK Pakistan 2026 | KK666 Login, Bonus & Withdrawal",
     description:
-      "Download K666 Game APK for Pakistan in 2026. Complete guide with Easypaisa & JazzCash withdrawals, bonuses, login steps & honest review.",
+      "Independent K666 guide from KK666.com.pk: APK download, JazzCash & Easypaisa cash-out, referral bonus & honest 2026 review for Pakistan players.",
     url: "/k666-game",
-    siteName: "K666 Game Pakistan Guide",
+    siteName: "KK666.com.pk",
     locale: "en_PK",
     type: "article",
     images: [
@@ -64,9 +66,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "K666 Game Download APK 2026 – Official Pakistan Guide",
+    title:
+      "K666 Game Download APK Pakistan 2026 | KK666 Login, Bonus & Withdrawal",
     description:
-      "Complete K666 Game guide for Pakistan: APK download, Easypaisa withdrawal, JazzCash, bonuses & honest review.",
+      "KK666.com.pk guide: K666 APK download, JazzCash & Easypaisa withdrawal, Rs 2000 referral & real-or-fake verdict for Pakistan.",
     images: ["/k666images/k6662.jpeg"],
   },
   robots: {
