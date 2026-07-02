@@ -58,7 +58,7 @@ export default function RootLayout({
             aria-label="Main navigation"
           >
             <a
-              href="/k666-game"
+              href="/"
               className="flex items-center gap-2.5 text-lg font-bold text-emerald-700"
             >
               <Image
@@ -87,7 +87,7 @@ export default function RootLayout({
                 Login
               </a>
               <a
-                href="/k666-game#faqs"
+                href="/#faqs"
                 className="hidden text-slate-600 hover:text-emerald-700 sm:inline"
               >
                 FAQ

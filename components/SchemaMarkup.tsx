@@ -57,14 +57,8 @@ export default function SchemaMarkup() {
       {
         "@type": "ListItem",
         position: 1,
-        name: "Home",
+        name: "K666 Game Pakistan Guide",
         item: SITE_URL,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "K666 Game",
-        item: `${SITE_URL}/k666-game`,
       },
     ],
   };
@@ -78,7 +72,7 @@ export default function SchemaMarkup() {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: `${SITE_URL}/k666-game?q={search_term_string}`,
+        urlTemplate: `${SITE_URL}/?q={search_term_string}`,
       },
       "query-input": "required name=search_term_string",
     },

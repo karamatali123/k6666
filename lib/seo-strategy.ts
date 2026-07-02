@@ -34,7 +34,7 @@ export const IMAGE_SEO_RECOMMENDATIONS = [
 
 /** Internal linking strategy for programmatic SEO */
 export const INTERNAL_LINKING_STRATEGY = {
-  hubPage: "/k666-game",
+  hubPage: "/",
   spokePages: [
     "/teen-patti-game",
     "/fortune-tiger-game",
@@ -48,7 +48,7 @@ export const INTERNAL_LINKING_STRATEGY = {
   rules: [
     "Link from K666 hub to all related game pages via RelatedGames component",
     "Use descriptive anchor text with target keywords (e.g. Teen Patti Game Pakistan)",
-    "Each spoke page should link back to /k666-game with anchor K666 Game Download",
+    "Each spoke page should link back to / with anchor K666 Game Download",
     "Include contextual in-content links within What Is and Games sections on spoke pages",
     "Maintain max 8–12 internal links per page to avoid dilution",
     "Use absolute paths for sitemap; relative paths in components",
