@@ -1,62 +1,51 @@
-const games = [
-  { name: "Teen Patti", type: "Card", note: "Most popular in Punjab; 3-card poker variant" },
-  { name: "Aviator", type: "Crash", note: "Cash out before the plane flies away" },
-  { name: "Fortune Tiger", type: "Slot", note: "High volatility; trending on TikTok PK" },
-  { name: "Super Ace", type: "Slot", note: "Added in V1.2.35 update" },
-  { name: "Dragon Tiger", type: "Card", note: "Fast 30-second rounds" },
-  { name: "Fortune Gems", type: "Slot", note: "Low minimum bet; good for beginners" },
-  { name: "Rummy", type: "Card", note: "Skill-based; longer sessions" },
-  { name: "Euro Roulette", type: "Table", note: "European wheel; single-zero" },
-  { name: "Poker", type: "Card", note: "Texas Hold'em tables" },
-  { name: "Fortune Rabbit", type: "Slot", note: "Lunar New Year themed; seasonal RTP boost" },
-] as const;
-
 export default function GamesSection() {
   return (
     <section
-      id="popular-games"
+      id="games-to-play"
       aria-labelledby="games-heading"
       className="px-4 py-10 sm:px-6 lg:px-8"
     >
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-4xl prose-section">
         <h2 id="games-heading" className="text-2xl font-bold text-slate-900">
-          Games Inside K666 APK — Full List (2026)
+          Games to Play on K666 Game App
         </h2>
-        <p className="mt-3 text-sm text-slate-600">
-          K666 hosts 40+ titles. These ten generate the most search traffic
-          from Pakistani players on KK666.com.pk:
+        <p className="mt-4 text-slate-700 leading-relaxed">
+          The lobby splits games into clear groups so you can jump straight to
+          what you like. Whether you prefer slow card hands or ten-second
+          rounds, K666 keeps options open. Here is how each category feels in
+          real play.
         </p>
 
-        <div className="mt-6 overflow-x-auto">
-          <table className="w-full min-w-[480px] border-collapse text-sm">
-            <caption className="sr-only">
-              Popular games in K666 Game APK
-            </caption>
-            <thead>
-              <tr className="border-b border-slate-200 bg-slate-50">
-                <th className="px-3 py-2 text-left font-semibold">Game</th>
-                <th className="px-3 py-2 text-left font-semibold">Type</th>
-                <th className="px-3 py-2 text-left font-semibold">Notes</th>
-              </tr>
-            </thead>
-            <tbody>
-              {games.map((g) => (
-                <tr key={g.name} className="border-b border-slate-100">
-                  <td className="px-3 py-2 font-medium text-emerald-800">
-                    {g.name}
-                  </td>
-                  <td className="px-3 py-2 text-slate-600">{g.type}</td>
-                  <td className="px-3 py-2 text-slate-600">{g.note}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <h3 className="mt-8 text-lg font-bold text-emerald-800">Slots</h3>
+        <p className="mt-3 text-slate-700 leading-relaxed">
+          Slots include fan titles like Fortune Tiger, Super Ace, and Fortune
+          Gems with bright reels and quick spins. Minimum bets often start low,
+          which suits testers with a small budget. Volatility is high though —
+          balance can drop fast if you chase big multipliers.
+        </p>
 
-        <p className="mt-4 text-sm text-slate-600">
-          Card games (Teen Patti, Rummy) suit players who prefer strategy.
-          Aviator and slots are high-speed, high-risk — set a stop-loss before
-          opening the lobby. Minimum bets start at Rs 10 on most slot titles.
+        <h3 className="mt-8 text-lg font-bold text-emerald-800">Casino</h3>
+        <p className="mt-3 text-slate-700 leading-relaxed">
+          Live-style casino rooms cover roulette, baccarat-style tables, and
+          other classic formats for players who like tradition. Streams run
+          smooth on stable 4G in major cities like Islamabad and Faisalabad.
+          Remember, faster rounds mean faster losses if you do not set limits.
+        </p>
+
+        <h3 className="mt-8 text-lg font-bold text-emerald-800">Table</h3>
+        <p className="mt-3 text-slate-700 leading-relaxed">
+          Table games focus on Teen Patti, Poker, Rummy, and Dragon Tiger for
+          users who enjoy skill and bluffing. Sessions last longer than slots,
+          so bankroll planning matters more here. Many Punjab players stick to
+          Teen Patti tables during evening free time.
+        </p>
+
+        <h3 className="mt-8 text-lg font-bold text-emerald-800">Arcade</h3>
+        <p className="mt-3 text-slate-700 leading-relaxed">
+          Arcade picks include crash games such as Aviator where you cash out
+          before the multiplier stops climbing. Rounds finish in seconds, which
+          makes this category addictive for some users. Use a strict stop-loss
+          — arcade speed eats balances quicker than you expect.
         </p>
       </div>
     </section>

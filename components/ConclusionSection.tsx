@@ -10,25 +10,18 @@ export default function ConclusionSection() {
       aria-labelledby="conclusion-heading"
       className="bg-emerald-50 px-4 py-10 sm:px-6 lg:px-8"
     >
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-4xl prose-section">
         <h2 id="conclusion-heading" className="text-2xl font-bold text-slate-900">
-          Final Verdict — Should You Download K666 in 2026?
+          Conclusion
         </h2>
-        <div className="mt-4 space-y-3 text-sm leading-relaxed text-slate-700">
-          <p>
-            K666 Game is a legitimate Android earning app for Pakistan with
-            working JazzCash and Easypaisa payments, 16 bonus features, and a
-            Rs 2000 referral program. Version V1.2.35 runs stable on modern
-            phones and supports Urdu — making it one of the most searched gaming
-            APKs in the country this year.
-          </p>
-          <p>
-            However, it is unregulated gambling. Most players lose money over
-            time. Download only from trusted sources like KK666.com.pk, start
-            with Rs 100–200, test a withdrawal early, and never deposit money
-            you cannot afford to lose.
-          </p>
-        </div>
+        <p className="mt-4 text-slate-700 leading-relaxed">
+          K666 Game is a working real money app for Pakistan with local wallets,
+          a deep game lobby, and strong promo events for new users. If you want
+          download and login help from a tested source, KK666.com.pk keeps the
+          steps clear and honest. Go ahead and try small deposits first, run an
+          early withdrawal test, and never bet cash you cannot afford to lose —
+          that is the only sane way to use any earning game in 2026.
+        </p>
         <a
           href={DOWNLOAD_URL}
           {...EXTERNAL_LINK_ATTRS}

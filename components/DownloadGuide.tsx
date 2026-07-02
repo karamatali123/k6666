@@ -5,55 +5,64 @@ import {
 } from "@/lib/constants";
 import { K666_IMAGES } from "@/lib/k666-images";
 
-const steps = [
-  {
-    title: "Allow APK installs on Android",
-    detail:
-      "Settings → Security → Install unknown apps → enable for Chrome or your file manager. Required on Android 8+ (Samsung, Xiaomi, Oppo, Vivo, Realme).",
-  },
-  {
-    title: "Download K666 APK V1.2.35",
-    detail:
-      "Tap the download button on this page. File size should be ~52 MB. If the APK is under 30 MB or has a different icon, delete it — likely a modified version.",
-  },
-  {
-    title: "Install and open the app",
-    detail:
-      "Open Downloads → tap k666.apk → Install. Grant storage permission if prompted. Launch and wait for the splash screen with the green K666 logo.",
-  },
-  {
-    title: "Register and claim welcome bonus",
-    detail:
-      "Sign up with your mobile number, verify OTP, and make a Rs 100 test deposit via JazzCash or Easypaisa to unlock the 30% first-deposit bonus.",
-  },
+const downloadSteps = [
+  "Tap the official download button on KK666.com.pk or the verified partner link.",
+  "Wait for the APK file (~52 MB) to finish saving in your Downloads folder.",
+  "Check the icon matches the green K666 logo before you open the file.",
+  "If the size looks too small, delete it — modified files are common on Telegram.",
+] as const;
+
+const installSteps = [
+  "Open Android Settings → Security → Install unknown apps.",
+  "Enable permission for Chrome or your file manager app.",
+  "Tap the downloaded APK and select Install on the prompt.",
+  "Launch K666, allow storage access if asked, and proceed to register or login.",
 ] as const;
 
 export default function DownloadGuide() {
   return (
     <section
-      id="download-install-guide"
+      id="download-install"
       aria-labelledby="download-heading"
-      className="px-4 py-10 sm:px-6 lg:px-8"
+      className="border-t border-slate-100 bg-slate-50 px-4 py-10 sm:px-6 lg:px-8"
     >
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-4xl prose-section">
         <h2 id="download-heading" className="text-2xl font-bold text-slate-900">
-          How to Download &amp; Install K666 Game APK on Android (2026)
+          How to Download and Install K666 APK?
         </h2>
-        <p className="mt-3 text-sm text-slate-600">
-          K666 is not on Google Play. Pakistani players must sideload the APK.
-          Works on Android 5.0+; we recommend Android 10 or newer for smooth
-          Aviator and slot performance.
+        <p className="mt-4 text-slate-700 leading-relaxed">
+          K666 is not listed on Google Play in Pakistan, so you sideload the
+          APK like many other earning apps. The process is safe when you use a
+          trusted source and double-check the file. We walk through download and
+          install separately so nothing gets skipped on older Android phones.
         </p>
 
         <div className="mt-6 grid items-center gap-6 md:grid-cols-2">
-          <ol className="list-decimal space-y-4 pl-5 text-sm text-slate-700">
-            {steps.map((step) => (
-              <li key={step.title}>
-                <strong className="text-slate-900">{step.title}</strong>
-                <p className="mt-1">{step.detail}</p>
-              </li>
-            ))}
-          </ol>
+          <div>
+            <h3 className="text-lg font-bold text-emerald-800">
+              Downloading Steps
+            </h3>
+            <p className="mt-2 text-sm text-slate-700">
+              Save the correct APK file before you change any phone settings.
+            </p>
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-700">
+              {downloadSteps.map((step) => (
+                <li key={step}>{step}</li>
+              ))}
+            </ul>
+
+            <h3 className="mt-8 text-lg font-bold text-emerald-800">
+              Installation Steps
+            </h3>
+            <p className="mt-2 text-sm text-slate-700">
+              Enable installs, then open the file you just downloaded.
+            </p>
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-700">
+              {installSteps.map((step) => (
+                <li key={step}>{step}</li>
+              ))}
+            </ul>
+          </div>
           <Image
             src={K666_IMAGES.promoBanner.src}
             alt={K666_IMAGES.promoBanner.alt}
@@ -65,20 +74,13 @@ export default function DownloadGuide() {
           />
         </div>
 
-        <div className="mt-6 flex flex-wrap gap-3">
-          <a
-            href={DOWNLOAD_URL}
-            {...EXTERNAL_LINK_ATTRS}
-            className="inline-flex min-h-[44px] items-center justify-center rounded-xl bg-emerald-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-emerald-500"
-          >
-            Download K666 APK Now
-          </a>
-        </div>
-
-        <p className="mt-4 text-sm text-amber-700">
-          Warning: Never install K666 from random Telegram links. Fake APKs can
-          steal JazzCash OTPs. KK666.com.pk only links to the verified source.
-        </p>
+        <a
+          href={DOWNLOAD_URL}
+          {...EXTERNAL_LINK_ATTRS}
+          className="mt-6 inline-flex min-h-[44px] items-center justify-center rounded-xl bg-emerald-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-emerald-500"
+        >
+          Download K666 APK
+        </a>
       </div>
     </section>
   );

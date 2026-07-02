@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
-import BestEarningSection from "@/components/BestEarningSection";
+import BonusesPromotionsSection from "@/components/BonusesPromotionsSection";
 import ConclusionSection from "@/components/ConclusionSection";
 import DisclaimerSection from "@/components/DisclaimerSection";
 import DownloadGuide from "@/components/DownloadGuide";
-import ExperienceSection from "@/components/ExperienceSection";
+import ExperienceReviewsSection from "@/components/ExperienceReviewsSection";
 import FaqSection from "@/components/FaqSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import GamesSection from "@/components/GamesSection";
+import GetStartedSection from "@/components/GetStartedSection";
 import HeroSection from "@/components/HeroSection";
+import OverviewSection from "@/components/OverviewSection";
 import PaymentGuide from "@/components/PaymentGuide";
 import ReferralSection from "@/components/ReferralSection";
 import RegistrationGuide from "@/components/RegistrationGuide";
 import ReviewSection from "@/components/ReviewSection";
-import SafetyTipsSection from "@/components/SafetyTipsSection";
+import SafetyLegalSection from "@/components/SafetyLegalSection";
 import SchemaMarkup from "@/components/SchemaMarkup";
-import ScreenshotsSection from "@/components/ScreenshotsSection";
 import TableOfContents from "@/components/TableOfContents";
-import TrendSection from "@/components/TrendSection";
-import UserReviews from "@/components/UserReviews";
 import WhatIsK666 from "@/components/WhatIsK666";
+import WhyChooseSection from "@/components/WhyChooseSection";
 import { SITE_URL } from "@/lib/constants";
 
 export const dynamic = "force-static";
@@ -41,7 +41,10 @@ export const metadata: Metadata = {
     "K666 JazzCash Withdrawal",
     "K666 Bonus 2026",
     "K666 Referral Code",
-    "K666 APK V1.2.35",
+    "new earning app",
+    "real money app",
+    "earning app in Pakistan",
+    "earn money online",
     "kk666.com.pk",
   ],
   metadataBase: new URL(SITE_URL),
@@ -93,20 +96,20 @@ export default function K666GamePage() {
       <article>
         <HeroSection />
         <TableOfContents />
+        <OverviewSection />
+        <WhyChooseSection />
         <WhatIsK666 />
         <FeaturesSection />
-        <ScreenshotsSection />
-        <DownloadGuide />
-        <RegistrationGuide />
-        <TrendSection />
-        <PaymentGuide />
         <GamesSection />
-        <BestEarningSection />
+        <GetStartedSection />
+        <RegistrationGuide />
+        <DownloadGuide />
+        <BonusesPromotionsSection />
         <ReferralSection />
-        <SafetyTipsSection />
+        <PaymentGuide />
+        <SafetyLegalSection />
         <ReviewSection />
-        <ExperienceSection />
-        <UserReviews />
+        <ExperienceReviewsSection />
         <ConclusionSection />
         <FaqSection />
         <DisclaimerSection />

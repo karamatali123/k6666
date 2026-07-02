@@ -1,19 +1,17 @@
 const pros = [
-  "Phone + OTP signup in under 90 seconds — no email or CNIC upload for basic play",
-  "Native JazzCash & Easypaisa — deposits from Rs 100, withdrawals from Rs 200",
-  "16 active bonus systems (wheel, ranking, referral, check-in) in V1.2.35",
-  "Urdu language option for players across Punjab, Sindh, and KPK",
-  "Aviator & Teen Patti run smooth on mid-range Android (tested on Redmi Note 12)",
-  "WhatsApp support responds in Urdu within 8–25 minutes during peak hours",
+  "JazzCash and Easypaisa deposits from Rs 100 — no foreign card needed",
+  "Large game library with slots, tables, casino, and arcade crash titles",
+  "Stacked bonuses: welcome pack, daily check-in, cashback, and bonus rain",
+  "Urdu and English UI helps players across Punjab, Sindh, and KPK",
+  "Agent program with up to 12% referral commission for active sharers",
 ] as const;
 
 const cons = [
-  "First withdrawal often delayed 2–6 hours for manual KYC review",
-  "House edge means most players lose money over weeks — not a stable income",
-  "Unregulated platform — no SECP or gambling commission oversight in Pakistan",
-  "Fake APK clones on Telegram can install malware or steal OTP codes",
-  "Bonus wagering requirements trap players who deposit for the 30% match",
-  "Account locks reported after multiple failed logins or bonus rule violations",
+  "Unregulated platform — no government gambling license in Pakistan",
+  "First withdrawal can take hours while manual security checks run",
+  "Bonus wagering rules trap users who deposit for big welcome amounts",
+  "Fake APK clones on social media can install malware or steal OTPs",
+  "House edge means most players lose money over weeks, not earn steady income",
 ] as const;
 
 export default function ReviewSection() {
@@ -23,39 +21,28 @@ export default function ReviewSection() {
       aria-labelledby="pros-cons-heading"
       className="px-4 py-10 sm:px-6 lg:px-8"
     >
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-4xl prose-section">
         <h2 id="pros-cons-heading" className="text-2xl font-bold text-slate-900">
-          K666 Game Review — Pros &amp; Cons (Honest 2026 Verdict)
+          Pros and Cons
         </h2>
-        <p className="mt-3 text-sm text-slate-600">
-          Is K666 real or fake? It is a functioning app with real PKR
-          transactions — but &quot;real&quot; does not mean &quot;profitable.&quot;
-          Here is our balanced assessment from KK666.com.pk:
-        </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
           <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-4">
-            <h3 className="font-semibold text-emerald-800">Pros</h3>
-            <ul className="mt-2 space-y-2 text-sm text-emerald-900">
+            <h3 className="font-bold text-emerald-800">Pros</h3>
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-emerald-900">
               {pros.map((p) => (
-                <li key={p}>+ {p}</li>
+                <li key={p}>{p}</li>
               ))}
             </ul>
           </div>
           <div className="rounded-lg border border-red-200 bg-red-50 p-4">
-            <h3 className="font-semibold text-red-800">Cons</h3>
-            <ul className="mt-2 space-y-2 text-sm text-red-900">
+            <h3 className="font-bold text-red-800">Cons</h3>
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-red-900">
               {cons.map((c) => (
-                <li key={c}>− {c}</li>
+                <li key={c}>{c}</li>
               ))}
             </ul>
           </div>
         </div>
-        <p className="mt-6 rounded-lg border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700">
-          <strong>Real or fake score: 7/10 for legitimacy.</strong> K666
-          processes real deposits and withdrawals. Score drops because of
-          withdrawal delays, bonus traps, and unregulated status. Treat it as
-          paid entertainment — not an investment.
-        </p>
       </div>
     </section>
   );
